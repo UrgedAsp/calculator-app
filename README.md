@@ -1,50 +1,83 @@
-# Welcome to your Expo app 👋
+# Calculadora (React Native + Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Pequeña aplicación de calculadora construida con React Native y Expo, diseñada como proyecto de práctica para aprender hooks, componentes reutilizables y el enrutador de Expo.
 
-## Get started
+<video src="screenshots/evidence_calculator_app.mp4" width="300" autoplay loop muted>
+   Not video supported
+</video>
 
-1. Install dependencies
+**Características**
 
-   ```bash
-   npm install
-   ```
+- Operaciones básicas: suma, resta, multiplicación y división.
+- Interfaz táctil optimizada para dispositivos móviles.
+- Componentes reutilizables (`CalculatorButton`, `ThemeText`).
+- Lógica encapsulada en el hook `useCalculator`.
 
-2. Start the app
+**Tecnologías**
 
-   ```bash
-   npx expo start
-   ```
+- React Native
+- Expo (expo-router)
+- TypeScript
 
-In the output, you'll find options to open the app in a
+**Requisitos**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Node.js (v16+ recomendado)
+- Yarn o npm
+- Expo CLI (opcional, se puede usar el script `npm run start`)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+**Instalación**
 
 ```bash
-npm run reset-project
+# clonar el repositorio
+git clone <tu-repo-url>
+cd calculator-app
+
+# instalar dependencias (usa npm o yarn)
+npm install
+# o
+yarn install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+**Ejecución**
 
-## Learn more
+```bash
+# iniciar el proyecto en Expo
+npm run start
 
-To learn more about developing your project with Expo, look at the following resources:
+# abrir en Android
+npm run android
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# abrir en iOS
+npm run ios
 
-## Join the community
+# web
+npm run web
+```
 
-Join our community of developers creating universal apps.
+**Scripts disponibles**
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `start`: inicia Expo (`expo start`)
+- `android`: inicia Expo y abre en Android
+- `ios`: inicia Expo y abre en iOS
+- `web`: ejecuta en la plataforma web
+- `lint`: ejecuta linter (expo lint)
+
+**Estructura del proyecto (resumen)**
+
+- `app/`: entrada y rutas de la aplicación (Expo Router)
+- `components/`: componentes reutilizables (`CalculatorButton.tsx`, `ThemeText.tsx`)
+- `hooks/`: hooks personalizados (`useCalculator.tsx`)
+- `constants/`: constantes y temas (`theme.ts`)
+- `styles/`: estilos globales (`global-styles.ts`)
+- `assets/`: imágenes y recursos estáticos
+
+**Componentes clave**
+
+- `CalculatorButton`: botón de la calculadora, recibe texto, color y callback.
+- `ThemeText`: texto con estilos del tema.
+- `useCalculator`: hook que maneja la lógica de la calculadora (estado, operaciones, formato).
+
+**Contribuciones**
+Si quieres contribuir, abre un issue o envía un pull request con cambios claros y pruebas cuando sea posible.
+
+Si quieres, puedo añadir un GIF/screenshot de la app, un badge de estado o una sección de pruebas/CI. ¿Qué prefieres que agregue ahora?
