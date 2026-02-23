@@ -2,9 +2,7 @@
 
 Pequeña aplicación de calculadora construida con React Native y Expo, diseñada como proyecto de práctica para aprender hooks, componentes reutilizables y el enrutador de Expo.
 
-<video src="screenshots/evidence_calculator_app.mp4" width="300" autoplay loop muted>
-   Not video supported
-</video>
+![Image](https://github.com/user-attachments/assets/5f27759a-bc47-4ba5-bd7a-bf8f059eb0b0)
 
 **Características**
 
